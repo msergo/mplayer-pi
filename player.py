@@ -10,6 +10,7 @@ class Player:
     def __init__(self):
 
         self.pid = None
+        self.process = None
         self._now_playing = "nothing..."
         with open('configs/stations.json', 'r') as f:
             self._stations = json.loads(f.read())['stations']
@@ -39,7 +40,7 @@ class Player:
         self._now_playing = station_name
 
         mplayerargs = ['mplayer', '-softvol', '-ao', 'alsa:device=bluetooth', '2>&1>/dev/null']
-        #mplayerargs = ['mplayer', '-softvol', '-vo', 'null', '2>&1>/dev/null'] # TODO: move to sep args
+        #mplayerargs = ['mplayer', '-softvol', '-vo', 'null'] # TODO: move to sep args
         station = self.get_station(station_name)
 
         if not station:
@@ -47,7 +48,8 @@ class Player:
 
         mplayerargs.append(station['url'])
 
-        self.pid = subprocess.Popen(mplayerargs).pid
+        self.process = subprocess.Popen(mplayerargs, stdout=subprocess.PIPE)
+        self.pid = self.process.pid
 
         return True
 

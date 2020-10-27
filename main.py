@@ -31,4 +31,10 @@ def play():
     redirect('/')
 
 
+@post('/stop')
+def stop():
+    mplayer.stop()
+    redirect('/')
+
+
 run(host='0.0.0.0', port=8080)
