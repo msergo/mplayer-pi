@@ -38,7 +38,8 @@ class Player:
 
         self._now_playing = station_name
 
-        mplayerargs = ['mplayer', '-softvol', '-vo', 'null', '2>&1>/dev/null'] # TODO: move to sep args
+        mplayerargs = ['mplayer', '-softvol', '-ao', 'alsa:device=bluetooth', '2>&1>/dev/null']
+        #mplayerargs = ['mplayer', '-softvol', '-vo', 'null', '2>&1>/dev/null'] # TODO: move to sep args
         station = self.get_station(station_name)
 
         if not station:

@@ -25,9 +25,10 @@ def play():
     try:
         name = body['name']
         mplayer.play(name)
-    except Exception:
+    except Exception as err:
+        print('Error: {0}'.format(err))
         return template('<b>shit happened')
     redirect('/')
 
 
-run(host='localhost', port=8080)
+run(host='0.0.0.0', port=8080)
