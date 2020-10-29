@@ -42,7 +42,7 @@ class Player:
 
         self._now_playing = station_name
 
-        mplayer_args = os.getenv('mplayerargs').split(' ')
+        mplayer_args = os.getenv('MPLAYER_ARGS').split(' ')
         station = self.get_station(station_name)
 
         if not station:
@@ -50,7 +50,7 @@ class Player:
 
         mplayer_args.append(station['url'])
 
-        self.process = subprocess.Popen(mplayer_args, stdout=subprocess.PIPE)
+        self.process = subprocess.Popen(mplayer_args, stdout=subprocess.PIPE, preexec_fn=os.setpgrp)
         self.pid = self.process.pid
 
         return
