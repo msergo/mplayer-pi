@@ -1,2 +1,4 @@
 ## Config parts of ~/.mplayer/config
 lirc=no
+prefer-ipv4=yes
+cache = 2000

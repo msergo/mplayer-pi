@@ -2,7 +2,18 @@
   "stations": [
     {
       "name": "SomaFM Groove Salad",
-      "url": "http://ice6.somafm.com/live-128-aac"
+      "url": "http://ice6.somafm.com/live-128-aac",
+      "id": 1
+    },
+    {
+      "name": "SomaFM Deep Space One",
+      "url": "http://ice2.somafm.com/deepspaceone-128-aac",
+      "id": 2
+    },
+     {
+      "name": "SomaFM The Trip",
+      "url": "http://ice3.somafm.com/thetrip-128-aac",
+      "id": 3
     }
   ]
 }

@@ -1,15 +1,17 @@
 import bottle
 from bottle import template, run, post, get, static_file, request, redirect
+from dotenv import load_dotenv
 
 from player import Player
 
+load_dotenv()
 mplayer = Player()
 bottle.TEMPLATES.clear()
 
 
-@get('/static/js/<filename>')
-def serve_static_js(filename):
-    return static_file(filename, root='static/js')
+@get('/static/<filename>')
+def serve_static_file(filename):
+    return static_file(filename, root='static/')
 
 
 @get('/')
