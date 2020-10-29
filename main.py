@@ -1,15 +1,17 @@
 import bottle
 from bottle import template, run, post, get, static_file, request, redirect
+from dotenv import load_dotenv
 
 from player import Player
 
+load_dotenv()
 mplayer = Player()
 bottle.TEMPLATES.clear()
 
 
-@get('/static/js/<filename>')
-def serve_static_js(filename):
-    return static_file(filename, root='static/js')
+@get('/static/<filename>')
+def serve_static_file(filename):
+    return static_file(filename, root='static/')
 
 
 @get('/')
@@ -25,9 +27,16 @@ def play():
     try:
         name = body['name']
         mplayer.play(name)
-    except Exception:
+    except Exception as err:
+        print('Error: {0}'.format(err))
         return template('<b>shit happened')
     redirect('/')
 
 
-run(host='localhost', port=8080)
+@post('/stop')
+def stop():
+    mplayer.stop()
+    redirect('/')
+
+
+run(host='0.0.0.0', port=8080)

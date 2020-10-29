@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="/static/js/play.js"></script>
+        <script src="/static/play.js"></script>
+        <link rel="stylesheet" href="/static/styles.css">
     </head>
     <body>
-        <div>  {{ now_playing }}  </div>
-        <ul>
            % for station in stations:
-                <li onclick="sendPlayReq('{{ station['name'] }}')" > {{ station['name'] }} </li>
+                <div id="{{station['id']}}" class="station-item" onclick="sendPlayReq('{{ station['name'] }}', '{{ station['id'] }}')" >
+                    {{ station['name'] }}
+                </div>
            % end
-        </ul>
-
     </body>
 </html>

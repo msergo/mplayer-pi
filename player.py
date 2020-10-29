@@ -10,6 +10,7 @@ class Player:
     def __init__(self):
 
         self.pid = None
+        self.process = None
         self._now_playing = "nothing..."
         with open('configs/stations.json', 'r') as f:
             self._stations = json.loads(f.read())['stations']
@@ -29,26 +30,30 @@ class Player:
         return self._now_playing
 
     def get_station_list(self):
-        return sorted(self._stations)
+        return sorted(self._stations, key=lambda x: x['name'], reverse=True)
 
     def play(self, station_name):
 
         if self.pid:
+            if self.get_active_station() == station_name:
+                self.stop()
+                return
             self.stop()
 
         self._now_playing = station_name
 
-        mplayerargs = ['mplayer', '-softvol', '-vo', 'null', '2>&1>/dev/null'] # TODO: move to sep args
+        mplayer_args = os.getenv('mplayerargs').split(' ')
         station = self.get_station(station_name)
 
         if not station:
             print('Station not found')
 
-        mplayerargs.append(station['url'])
+        mplayer_args.append(station['url'])
 
-        self.pid = subprocess.Popen(mplayerargs).pid
+        self.process = subprocess.Popen(mplayer_args, stdout=subprocess.PIPE)
+        self.pid = self.process.pid
 
-        return True
+        return
 
     def stop(self):
         if self.pid:

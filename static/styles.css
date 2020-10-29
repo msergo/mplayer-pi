@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+}
+
+.station-item {
+    border: solid;
+    border-radius: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 4em;
+    font-family: Impact, Charcoal, sans-serif;
+    color: antiquewhite;
+    display: inline-block;
+    margin: .5em .5em .5em .5em
+}
+
+.now-playing {
+    color: navy;
+}
