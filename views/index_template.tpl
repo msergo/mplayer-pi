@@ -6,7 +6,7 @@
     </head>
     <body>
            % for station in stations:
-                <div id="{{station['id']}}" class="station-item" onclick="sendPlayReq('{{ station['name'] }}', '{{ station['id'] }}')" >
+                <div id="{{station['id']}}" class="station-item {{ 'now-playing' if station['name'] == now_playing else '' }}" onclick="sendPlayReq('{{ station['name'] }}', '{{ station['id'] }}')" >
                     {{ station['name'] }}
                 </div>
            % end
