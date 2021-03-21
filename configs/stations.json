@@ -10,10 +10,25 @@
       "url": "http://ice2.somafm.com/deepspaceone-128-aac",
       "id": 2
     },
-     {
+    {
       "name": "SomaFM The Trip",
       "url": "http://ice3.somafm.com/thetrip-128-aac",
       "id": 3
+    },
+    {
+      "name": "NRJ Ukraine",
+      "url": "http://cast.nrj.in.ua/nrj_hot",
+      "id": 4
+    },
+    {
+      "name": "Christmas Beats",
+      "url": "http://ice6.somafm.com/christmas-32-aac",
+      "id": 5
+    },
+    {
+      "name": "Christmas Department Store",
+      "url": "http://ice1.somafm.com/specials-32-aac",
+      "id": 6
     }
   ]
 }
