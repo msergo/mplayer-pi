@@ -10,7 +10,7 @@
       "url": "http://ice2.somafm.com/deepspaceone-128-aac",
       "id": 2
     },
-     {
+    {
       "name": "SomaFM The Trip",
       "url": "http://ice3.somafm.com/thetrip-128-aac",
       "id": 3
@@ -21,24 +21,29 @@
       "id": 4
     },
     {
-      "name": "Los 40 Principales",
+      "name": "Los 40 Principales ES",
       "url": "https://22323.live.streamtheworld.com/LOS40_SC",
       "id": 5
     },
     {
-      "name": "Cadena 100",
+      "name": "Cadena 100 ES",
       "url": "https://cadena100-cope-rrcast.flumotion.com/cope/cadena100-low.mp3",
       "id": 6
     },
     {
       "name": "Radio Tallinn",
-      "url": "https://lonestarr.err.ee/live/raadiotallinnmadal/index.m3u8?id=76639168936887",
+      "url": "http://icecast.err.ee/raadiotallinn.mp3",
       "id": 7
     },
     {
-      "name": "Radio KUKU",
-      "url": "http://le05.euddn.net/476214340e73e4034fefa7d2aa18052ce641f1e0c7a927033335ee32d3f3025881a9275f12a5deb237619f56750bbeee6563d9e42397ce87852bd6665d4b177c144a8d589092ab30803c1dd37e2319388ca081d05a085d7c6c3e08340b6ec72cf6cca3dd89626aa17a639def30ed63777bac3988ec4a49746d5ea4e2c672e703ba445534ddb7f5506282e096d798f7c9/kuku.aac",
+      "name": "Radio 24 PL",
+      "url": "https://stream15.polskieradio.pl/pr24/pr24.sdp/playlist.m3u8",
       "id": 8
+    },
+    {
+      "name": "Radio Nova FI",
+      "url": "http://stream.bauermedia.fi/radionova/radionova_128.mp3",
+      "id": 9
     }
   ]
 }

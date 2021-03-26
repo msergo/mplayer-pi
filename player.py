@@ -48,9 +48,12 @@ class Player:
         if not station:
             print('Station not found')
 
+        if station['url'].endswith('.m3u8'):
+            mplayer_args.append('-playlist')
+
         mplayer_args.append(station['url'])
 
-        self.process = subprocess.Popen(mplayer_args, stdout=subprocess.PIPE, preexec_fn=os.setpgrp)
+        self.process = subprocess.Popen(mplayer_args, stdout=subprocess.PIPE)
         self.pid = self.process.pid
 
         return
