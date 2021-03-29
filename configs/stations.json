@@ -44,6 +44,31 @@
       "name": "Radio Nova FI",
       "url": "http://stream.bauermedia.fi/radionova/radionova_128.mp3",
       "id": 9
+    },
+    {
+      "name": "Radio Kredens Cafe UA",
+      "url": "http://stream.mjoy.ua:8000/kredens-cafe-radio_mp3",
+      "id": 10
+    },
+    {
+      "name": "Radio Eska PL",
+      "url": "https://radio.stream.smcdn.pl/icradio-p/2170-1.aac/playlist.m3u8",
+      "id": 11
+    },
+    {
+      "name": "Trójka PL",
+      "url": "https://stream13.polskieradio.pl/pr3/pr3.sdp/playlist.m3u8",
+      "id": 12
+    },
+    {
+      "name": "Złote Przeboje PL",
+      "url": "https://radiostream.pl/tuba8906-1.mp3",
+      "id": 13
+    },
+    {
+      "name": "Yle Radio 1 FI",
+      "url": "https://yleuni-f.akamaihd.net/i/yleliveradiohd_1@113878/master.m3u8",
+      "id": 14
     }
   ]
 }

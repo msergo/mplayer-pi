@@ -42,24 +42,24 @@ class Player:
 
         self._now_playing = station_name
 
-        mplayer_args = os.getenv('MPLAYER_ARGS').split(' ')
+        player_args = os.getenv('PLAYER_ARGS').split(' ')
         station = self.get_station(station_name)
 
         if not station:
             print('Station not found')
 
-        if station['url'].endswith('.m3u8'):
-            mplayer_args.append('-playlist')
+        if player_args[0] == 'mplayer' and station['url'].endswith('.m3u8'):
+            player_args.append('-playlist')
 
-        mplayer_args.append(station['url'])
+        player_args.append(station['url'])
 
-        self.process = subprocess.Popen(mplayer_args, stdout=subprocess.PIPE)
+        self.process = subprocess.Popen(player_args, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
         self.pid = self.process.pid
 
         return
 
     def stop(self):
         if self.pid:
-            os.kill(self.pid, 15)  # 15 = SIGTERM
+            os.kill(self.pid, 9)  # 9 = SIGKILL
         self.pid = None
         self._now_playing = "nothing..."
