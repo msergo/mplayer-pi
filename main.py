@@ -1,3 +1,5 @@
+import os
+
 import bottle
 from bottle import template, run, post, get, static_file, request, redirect
 from dotenv import load_dotenv
@@ -33,10 +35,4 @@ def play():
     redirect('/')
 
 
-@post('/stop')
-def stop():
-    mplayer.stop()
-    redirect('/')
-
-
-run(host='0.0.0.0', port=8080)
+run(host='0.0.0.0', port=os.getenv('PORT'))

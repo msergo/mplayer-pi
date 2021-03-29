@@ -10,7 +10,8 @@ body {
     font-family: Impact, Charcoal, sans-serif;
     color: antiquewhite;
     display: inline-block;
-    margin: .5em .5em .5em .5em
+    margin: .5em .5em .5em .5em;
+    cursor: pointer;
 }
 
 .now-playing {

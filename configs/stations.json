@@ -10,10 +10,65 @@
       "url": "http://ice2.somafm.com/deepspaceone-128-aac",
       "id": 2
     },
-     {
+    {
       "name": "SomaFM The Trip",
       "url": "http://ice3.somafm.com/thetrip-128-aac",
       "id": 3
+    },
+    {
+      "name": "NRJ Ukraine",
+      "url": "http://cast.nrj.in.ua/nrj_hot",
+      "id": 4
+    },
+    {
+      "name": "Los 40 Principales ES",
+      "url": "https://22323.live.streamtheworld.com/LOS40_SC",
+      "id": 5
+    },
+    {
+      "name": "Cadena 100 ES",
+      "url": "https://cadena100-cope-rrcast.flumotion.com/cope/cadena100-low.mp3",
+      "id": 6
+    },
+    {
+      "name": "Radio Tallinn",
+      "url": "http://icecast.err.ee/raadiotallinn.mp3",
+      "id": 7
+    },
+    {
+      "name": "Radio 24 PL",
+      "url": "https://stream15.polskieradio.pl/pr24/pr24.sdp/playlist.m3u8",
+      "id": 8
+    },
+    {
+      "name": "Radio Nova FI",
+      "url": "http://stream.bauermedia.fi/radionova/radionova_128.mp3",
+      "id": 9
+    },
+    {
+      "name": "Radio Kredens Cafe UA",
+      "url": "http://stream.mjoy.ua:8000/kredens-cafe-radio_mp3",
+      "id": 10
+    },
+    {
+      "name": "Radio Eska PL",
+      "url": "https://radio.stream.smcdn.pl/icradio-p/2170-1.aac/playlist.m3u8",
+      "id": 11
+    },
+    {
+      "name": "Trójka PL",
+      "url": "https://stream13.polskieradio.pl/pr3/pr3.sdp/playlist.m3u8",
+      "id": 12
+    },
+    {
+      "name": "Złote Przeboje PL",
+      "url": "https://radiostream.pl/tuba8906-1.mp3",
+      "id": 13
+    },
+    {
+      "name": "Yle Radio 1 FI",
+      "url": "https://yleuni-f.akamaihd.net/i/yleliveradiohd_1@113878/master.m3u8",
+      "id": 14
     }
   ]
 }
