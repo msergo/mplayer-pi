@@ -2,9 +2,9 @@
 See the blog post about this app https://sergiiwrites.online/2022/09/10/internet-radio-pi-zero.html  
 
 #### Setting up
-NB!: tested with python version 3.7.3
+NB!: tested with python version 3.8
 ```bash 
-virtualenv -p /usr/bin/python3 env
+virtualenv -p /usr/bin/python3.8 env
 . env/bin/activate
 pip install -r requirements.txt
 python main.py 

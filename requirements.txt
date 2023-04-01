@@ -1,2 +1,2 @@
 bottle==0.12.18
-python-dotenv==0.15.0
+python-dotenv==1.0.1
