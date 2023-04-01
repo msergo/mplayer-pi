@@ -71,8 +71,8 @@ class Player:
             self._volume_level = self._volume_level + 10
         elif action == "decrease":
             self._volume_level = self._volume_level - 10
-
-        os.system("amixer -D bluealsa sset  'JBL Charge 2+ - A2DP' " +
+        
+        os.system(os.getenv('VOLUME_LEVEL_COMMAND') +
                   str(self._volume_level) + " &")
 
     def get_volume_level(self):

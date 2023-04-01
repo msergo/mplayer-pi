@@ -69,6 +69,11 @@
       "name": "Yle Radio 1 FI",
       "url": "https://yleuni-f.akamaihd.net/i/yleliveradiohd_1@113878/master.m3u8",
       "id": 14
+    },
+    {
+      "name": "Orbit FM Portugal",
+      "url": "https://ec2.yesstreaming.net:3025/stream",
+      "id": 15
     }
   ]
 }

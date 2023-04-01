@@ -39,8 +39,8 @@ def play():
 @post('/change-volume')
 def change_volume():
     body = request.json
-    print("body", body)
     action = body['action']
+    
     mplayer.change_volume_level(action)
 
 

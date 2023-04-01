@@ -22,6 +22,7 @@ body {
     color: rgb(5, 35, 87);
     display: inline;
     margin: .3em .3em .3em .3em;
+    cursor: pointer;
 }
 
 .now-playing {
