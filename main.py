@@ -20,7 +20,8 @@ def serve_static_file(filename):
 def index():
     stations = mplayer.get_station_list()
     now_playing = mplayer.get_active_station()
-    return template('index_template', now_playing=now_playing, stations=stations)
+    volume_level = mplayer.get_volume_level()
+    return template('index_template', now_playing=now_playing, stations=stations, volume_level=volume_level)
 
 
 @post('/play')
@@ -33,6 +34,14 @@ def play():
         print('Error: {0}'.format(err))
         return template('<b>shit happened')
     redirect('/')
+
+
+@post('/change-volume')
+def change_volume():
+    body = request.json
+    action = body['action']
+    
+    mplayer.change_volume_level(action)
 
 
 run(host='0.0.0.0', port=os.getenv('PORT'))

@@ -1,0 +1,13 @@
+[Unit]
+Description=mplayer-pi service
+
+[Service]
+User=pi
+NotifyAccess=all
+WorkingDirectory=/home/pi/apps/mplayer-pi
+ExecStart=/home/pi/apps/mplayer-pi/run_service.sh
+WatchdogSec=30s
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

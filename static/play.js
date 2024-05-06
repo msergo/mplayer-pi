@@ -21,3 +21,11 @@ function sendStopReq() {
         .then(response => console.log(response))
         .catch(err => console.log(err));
 }
+
+function changeVolumeLevel(action) {
+    return fetch('/change-volume', {
+        headers: { 'Content-type': 'application/json; charset=UTF-8' },
+        method: 'POST',
+        body: JSON.stringify({ action })
+    })
+}
