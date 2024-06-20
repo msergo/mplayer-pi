@@ -1,79 +1,82 @@
 {
   "stations": [
     {
-      "name": "SomaFM Groove Salad",
-      "url": "http://ice6.somafm.com/live-128-aac",
-      "id": 1
-    },
-    {
-      "name": "SomaFM Deep Space One",
-      "url": "http://ice2.somafm.com/deepspaceone-128-aac",
-      "id": 2
-    },
-    {
-      "name": "SomaFM The Trip",
-      "url": "http://ice3.somafm.com/thetrip-128-aac",
-      "id": 3
-    },
-    {
-      "name": "NRJ Ukraine",
-      "url": "http://cast.nrj.in.ua/nrj_hot",
-      "id": 4
-    },
-    {
-      "name": "Los 40 Principales ES",
-      "url": "https://22323.live.streamtheworld.com/LOS40_SC",
-      "id": 5
-    },
-    {
       "name": "Cadena 100 ES",
       "url": "https://cadena100-cope-rrcast.flumotion.com/cope/cadena100-low.mp3",
-      "id": 6
+      "id": 0,
+      "icon": "/static/cadena100.png"
     },
     {
-      "name": "Radio Tallinn",
-      "url": "http://icecast.err.ee/raadiotallinn.mp3",
-      "id": 7
-    },
-    {
-      "name": "Radio 24 PL",
-      "url": "https://stream15.polskieradio.pl/pr24/pr24.sdp/playlist.m3u8",
-      "id": 8
-    },
-    {
-      "name": "Radio Nova FI",
-      "url": "http://stream.bauermedia.fi/radionova/radionova_128.mp3",
-      "id": 9
-    },
-    {
-      "name": "Radio Kredens Cafe UA",
-      "url": "http://stream.mjoy.ua:8000/kredens-cafe-radio_mp3",
-      "id": 10
-    },
-    {
-      "name": "Radio Eska PL",
-      "url": "https://radio.stream.smcdn.pl/icradio-p/2170-1.aac/playlist.m3u8",
-      "id": 11
-    },
-    {
-      "name": "Trójka PL",
-      "url": "https://stream13.polskieradio.pl/pr3/pr3.sdp/playlist.m3u8",
-      "id": 12
+      "name": "SomaFM Groove Salad",
+      "url": "http://ice6.somafm.com/live-128-aac",
+      "id": 1,
+      "icon": "/static/somafm-groove-salad.png"
     },
     {
       "name": "Złote Przeboje PL",
       "url": "https://radiostream.pl/tuba8906-1.mp3",
-      "id": 13
+      "id": 2,
+      "icon": "/static/zlote-przeboje.avif"
+    },
+    {
+      "name": "Orbital Portugal",
+      "url": "https://ec2.yesstreaming.net:3025/stream",
+      "id": 3,
+      "icon": "/static/orbital.png"
+    },
+    {
+      "name": "Radio Tel Aviv 102FM",
+      "url": "http://102.livecdn.biz/102fm_aac",
+      "id": 4,
+      "icon": "/static/tel-aviv-102.ico"
+    },
+    {
+      "name": "SomaFM Deep Space One",
+      "url": "http://ice2.somafm.com/deepspaceone-128-aac",
+      "id": 5,
+      "icon": "/static/deepspaceone-400.png"
+    },
+    {
+      "name": "SomaFM The Trip",
+      "url": "http://ice3.somafm.com/thetrip-128-aac",
+      "id": 6,
+      "icon": "/static/thetrip-400.jpg"
+    },
+    {
+      "name": "Radio Tallinn",
+      "url": "http://icecast.err.ee/raadiotallinn.mp3",
+      "id": 7,
+      "icon": "/static/radio-tallinn.png"
+    },
+    {
+      "name": "Radio Kredens Cafe UA",
+      "url": "http://stream.mjoy.ua:8000/kredens-cafe-radio_mp3",
+      "id": 8,
+      "icon": "/static/credens-cafe.jpg"
+    },
+    {
+      "name": "Radio Eska PL",
+      "url": "https://radio.stream.smcdn.pl/icradio-p/2170-1.aac/playlist.m3u8",
+      "id": 9,
+      "icon": "/static/radio-eska.svg"
     },
     {
       "name": "Yle Radio 1 FI",
       "url": "https://yleuni-f.akamaihd.net/i/yleliveradiohd_1@113878/master.m3u8",
-      "id": 14
+      "id": 10,
+      "icon": "/static/yle-radio.png"
     },
     {
-      "name": "Orbit FM Portugal",
-      "url": "https://ec2.yesstreaming.net:3025/stream",
-      "id": 15
+      "name": "BioBio Chile",
+      "url": "http://unlimited5-us.dps.live/biobiosantiago/aac/icecast.audio",
+      "id": 11,
+      "icon": "/static/biobio-chile.jpg"
+    },
+    {
+      "name": "Radio Pudahuel Chile",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PUDAHUELAAC.aac",
+      "id": 12,
+      "icon": "/static/pudahuel-chile.png"
     }
   ]
 }
