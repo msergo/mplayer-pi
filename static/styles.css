@@ -3,32 +3,36 @@ body {
 }
 
 .station-item {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    color: antiquewhite;
-    display: inline-block;
-    margin: .5em .5em .5em .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 30%;
+}
+
+.station-item .station-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.station-item.now-playing {
+    background-color: darkblue;
+    border-radius: 30%;
+    padding: 10px;
+}
+
+.control-button {
+    width: 150px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
     cursor: pointer;
-    width: 200px;
-    height: 200px;
-}
-
-.button {
-    border-radius: 25px;
-    color: rgb(5, 35, 87);
-    display: inline-block;
-    margin: .3em .3em .3em .3em;
-}
-
-.now-playing {
-    border: solid;
-    border-radius: 30%;
-    border-width: 10px;
-    color: navy;
-    background-color: mediumblue;
-}
-
-img {
-    border-radius: 30%;
-    width: 200px;
-    height: 200px;
+    transition: all 0.3s ease;
 }
