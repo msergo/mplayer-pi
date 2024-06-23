@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <script src="/static/play.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/styles.css">
