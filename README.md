@@ -1,7 +1,15 @@
-### Player app for listening internet radio streams on Raspberry Pi Zero (W) with an external bluetooth speaker
+### Player app for listening internet radio streams on Raspberry Pi Zero W with an external bluetooth speaker
+
+### Motivation
+I need a browser-accessible app to play radio streams on my bluetooth speaker.
+
 See the blog post about this app https://msergo.github.io/2022/09/10/internet-radio-pi-zero.html  
 
-![Screenshot](./screenshot.png)
+<img src="https://raw.githubusercontent.com/msergo/mplayer-pi/master/screenshot.png" width="380">
+
+
+### How it works
+An instance of `cvlc` is spawned using python's `subprocess.Popen` which playes the stream. 
 
 ### Features
 * Extremely lightweight, built with bottle.py library
@@ -41,10 +49,10 @@ defaults.bluealsa.profile "a2dp"
 defaults.bluealsa.delay 10000 
 ```
 
-#### Verify it works
+#### Install player and verify that sound works
 ```bash
-$ sudo apt install mplayer
-$ mplayer -softvol -vo null -ao alsa:device=bluealsa file_example.wav 
+$ sudo apt install cvlc
+cvlc -A alsa --alsa-audio-device bluealsa file_example.wav 
 ```
 
 #### Run the app
@@ -56,6 +64,7 @@ pip install -r requirements.txt
 python main.py 
 ```
 
+NB! You might need to adjust the `VOLUME_LEVEL_COMMAND` in the `.env` file in order to match your BT device name.
 
 #### Configuring as a systemd service 
 ##### 1. Create file /etc/systemd/system/mplayer-pi.service
@@ -71,17 +80,16 @@ ExecStart=/path/to/mplayer-pi/env/bin/python3 -m main
 [Install]
 WantedBy=multi-user.target
 ```
+
 ##### 2. Enable service
 ```bash
 systemctl enable mplayer-pi.service
 ```
+
 ##### 3. Start service
 ```bash
 systemctl start mplayer-pi.service
 ```
-
-### TODO:
-* improve UI (WIP)
 
 ### Images credits:
 * google.com

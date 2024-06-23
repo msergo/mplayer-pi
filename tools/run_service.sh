@@ -13,7 +13,7 @@ watchdog() {
             /bin/systemd-notify WATCHDOG=1;
             sleep $(($WATCHDOG_USEC / 2000000))
         else
-            echo `date` FAILED=$FAIL > error.log
+            echo `date` FAILED=$FAIL >> error.log
             sleep 1
         fi
     done
