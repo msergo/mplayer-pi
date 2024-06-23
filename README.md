@@ -82,3 +82,7 @@ systemctl start mplayer-pi.service
 
 ### TODO:
 * improve UI (WIP)
+
+### Images credits:
+* google.com
+* radio station web portals

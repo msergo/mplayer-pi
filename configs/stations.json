@@ -16,19 +16,19 @@
       "name": "Złote Przeboje PL",
       "url": "https://radiostream.pl/tuba8906-1.mp3",
       "id": 2,
-      "icon": "/static/zlote-przeboje.avif"
+      "icon": "/static/zlote-przeboje.png"
     },
     {
       "name": "Orbital Portugal",
       "url": "https://ec2.yesstreaming.net:3025/stream",
       "id": 3,
-      "icon": "/static/orbital.png"
+      "icon": "/static/orbital.jpg"
     },
     {
       "name": "Radio Tel Aviv 102FM",
       "url": "http://102.livecdn.biz/102fm_aac",
       "id": 4,
-      "icon": "/static/tel-aviv-102.ico"
+      "icon": "/static/tel-aviv-102.png"
     },
     {
       "name": "SomaFM Deep Space One",
@@ -58,7 +58,7 @@
       "name": "Radio Eska PL",
       "url": "https://radio.stream.smcdn.pl/icradio-p/2170-1.aac/playlist.m3u8",
       "id": 9,
-      "icon": "/static/radio-eska.svg"
+      "icon": "/static/radio-eska.png"
     },
     {
       "name": "Yle Radio 1 FI",
