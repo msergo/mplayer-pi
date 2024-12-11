@@ -77,6 +77,24 @@
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PUDAHUELAAC.aac",
       "id": 12,
       "icon": "/static/pudahuel-chile.png"
+    },
+    {
+      "name": "Christmas Rocks",
+      "id": 13,
+      "url": "https://somafm.com/xmasrocks130.pls",
+      "icon": "static/xmasrocks-400.png"
+    },
+    {
+      "name": "Christmas Lounge",
+      "id": 14,
+      "url": "https://somafm.com/christmas130.pls",
+      "icon": "/static/christmas-400.jpg"
+    },
+    {
+      "name": "Department Store Christmas",
+      "id": 15,
+      "url": "https://somafm.com/deptstore130.pls",
+      "icon": "/static/deptstore400.jpg"
     }
   ]
 }
