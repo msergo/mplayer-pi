@@ -94,3 +94,4 @@ systemctl start mplayer-pi.service
 ### Images credits:
 * google.com
 * radio station web portals
+* soma.fm
