@@ -1,2 +1,2 @@
-git+https://github.com/psf/black
-ruff==0.4.10 
+black>=24.0.0
+ruff>=0.8.0 

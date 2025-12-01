@@ -56,13 +56,15 @@ cvlc -A alsa --alsa-audio-device bluealsa file_example.wav
 ```
 
 #### Run the app
-NB!: tested with python version 3.8
+Requirements: Python 3.11+ (tested with 3.12)
 ```bash 
-virtualenv -p /usr/bin/python3.8 env
-. env/bin/activate
+python3 -m venv env
+source env/bin/activate.fish  # or . env/bin/activate for bash
 pip install -r requirements.txt
 python main.py 
 ```
+
+The app will start the Bottle web server on `http://0.0.0.0:8080/`
 
 NB! You might need to adjust the `VOLUME_LEVEL_COMMAND` in the `.env` file in order to match your BT device name.
 
@@ -75,7 +77,7 @@ Description=mplayer-pi service
 [Service]
 User=pi
 WorkingDirectory=/path/to/mplayer-pi
-ExecStart=/path/to/mplayer-pi/env/bin/python3 -m main
+ExecStart=/path/to/mplayer-pi/env/bin/python main.py
 
 [Install]
 WantedBy=multi-user.target
